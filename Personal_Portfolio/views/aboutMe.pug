@@ -1,6 +1,25 @@
+include  layout.pug
+
 doctype html
 html
   head
-    title
-  body
-    h1 About Me
+    title #{title} 
+    link(rel="stylesheet" type="text/css" href="/stylesheets/main.css") 
+  <body><br>
+  <div class="pb-top">
+      <div class="container">
+          <div class="row justify-content-between align-items-center">
+              <!-- starting of about me section-->
+              <div class="caption">
+                  <h2>Hello! My name is Gurinder Singh.</h2> 
+                      <p class="pb-30">I am currently enrolling in Computer Programming course as an international student in Georgian College.</p>
+                  <h5>Goal</h5>
+                      <p>I want to become a web developer who can build efficient web application.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  </body>
+  <!--style tag used for getting necessary margin before footer -->
+  <div style="margin-top:450px"></div>
+  include partials/footer.pug

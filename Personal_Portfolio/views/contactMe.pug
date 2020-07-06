@@ -1,6 +1,21 @@
+//- 
+ File Name: Contact me page 
+ Author's name: Gurinder Singh
+ Website name: Personal Portfolio
+ File description: This file contains the contact information of the author with the help of which we can contact him via phone and address.
+//
+<!-- including layout.pug file by using include command -->
+include layout.pug
 doctype html
 html
   head
-    title
+    title #{title}
   body
-    h1 Contact Me
+   <h2 style="text-align: center ; margin-top: 40px"><u>Contact Info</u></h2> <br><br>
+          <p style="text-align: center"><b>Address:</b></p>
+          <p style="text-align: center">122 Dunlop Street East, Barrie</p>
+          <p style="text-align: center">Ontario - L4M1A$</p>
+          <p style="text-align: center"><b>Cell Phone:</b> +1 437-239-2248</p>
+          <p style="text-align: center"><b>Email:</b> gurindersingh121999@gmail.com</p>
+  <div style="margin-top:350px"></div>
+   include partials/footer.pug  

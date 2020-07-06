@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+
+    p Welcome to #{title}
+    link(rel="stylesheet" type="text/css" href="/stylesheets/main.css") 
+    <!-- image tag in the div -->
+    <image src="/images/portfolio_image.jpg" alt="man" height="500" width="100%">
+  
+    include partials/footer.pug

@@ -1,6 +1,41 @@
+//-
+ File Name: projects.pug
+ Author's name:  Gurinder Singh
+ Website name: Gurindersingh_Portfolio
+ File description: It contains the information regarding the projects, I have worked on till now.//
+
+include layout.pug
 doctype html
 html
   head
-    title
-  body
-   h1 Projects
+    title #{title}
+    <!-- adding css file -->
+    link(rel="stylesheet" type="text/css" href="/stylesheets/main.css") 
+  <body> <br>
+      <h2 class="text-center"><u>Projects.</u></h2><br><br><br><br><br>
+      <!--section start for projects details -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="text-center mb-50">
+                  <h3><u>Tool Shop</u></h3><br><br>
+                  <p style="margin-bottom: 20px ; font-size:22px">Tool Shop is a website that I built in the third semester, which is simply used for buying tools. This project is based on the MVC framework in ASP.Net using C#.</p>
+              </div>
+          </div>
+          <!--column 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="text-center mb-50">
+                  <h3><u>Scrabble Point Generator</u></h3><br><br>
+                      <p style="font-size:22px">It was a very interesting project which built using java. This prject is a simple game in which each alphabet is linked to a number. When you take out one alphabet there will be a decrement of alphabet in the bag.</p>
+              </div>
+          </div>  
+          <!--column 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="text-center mb-50">
+                  <h3><u>Student Portal</u></h3><br><br>
+                      <p style="font-size:22px">I am working on this project to build a student information system using java, I have done the back end code and only the GUI is left.</p>
+              </div>
+          </div>  
+        </div>  
+  </body>
+  <div style="margin-top:185px"></div>
+    include partials/footer.pug
